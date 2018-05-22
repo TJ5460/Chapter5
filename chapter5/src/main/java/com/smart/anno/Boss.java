@@ -14,16 +14,17 @@ public class Boss {
 	public Boss(){
 		System.out.println("construct...");
 	}
-
-//	@Autowired
-//	private void setCar(Car car){
-//		System.out.println("execute in setCar");
-//		this.car = car;
-//	}
+   
+	@Autowired
+	private void setCar(Car car){
+		System.out.println("execute in setCar");
+		this.car = car;
+	}
 	
 	@Resource
 	private void setCar(Car car){
 		System.out.println("execute in setCar");
+		//try some annotations
 		this.car = car;
 	}
 	
